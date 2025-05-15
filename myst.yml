@@ -4,7 +4,7 @@ project:
   id: e1e95549-a2be-4cc6-8d71-c9c803a3b7ac
   title: Internship Data Science
   description: Internship Data Science from Gradtwin., Chennai., INDIA.
-  logo: 'dataScience2.jpeg'
+  logo: images/dataScience2.jpeg
   keywords: ["Python", "Data Science", "Machine Learning", "Deep Learning"]
   authors: ['Rajesh Karra']
   github: https://github.com/rajeshkumarkarra/internship_Data-Science
@@ -25,4 +25,4 @@ site:
   template: book-theme
   #options:
     # favicon: favicon.ico
-  logo: 'dataScience2.jpeg'
+  logo: images/dataScience2.jpeg
