@@ -26,3 +26,8 @@ site:
   #options:
     # favicon: favicon.ico
   logo: images/dataScience2.jpeg
+  nav: []
+  actions: 
+    - title: Learn More
+      url: https://github.com/rajeshkumarkarra
+  domains: []
