@@ -17,8 +17,7 @@ keywords: myst, markdown, open-science
 export: docx
 ---
 +++ {"part":"abstract"}
-A presentation on Gen AI
-parameters to present the Technological inspirations and achivements behind the Prompt Engineering.
+A presentation on Gen AI and the parameters namely, technological inspirations and achivements behind the Prompt Engineering which this paper explains according to below criteria  
 * Research
 * Resources
 * Presenting
