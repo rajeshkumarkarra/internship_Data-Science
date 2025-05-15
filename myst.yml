@@ -3,24 +3,25 @@ version: 1
 project:
   id: e1e95549-a2be-4cc6-8d71-c9c803a3b7ac
   title: Internship Data Science
-  logo: dataScience.png
   description: Internship Data Science from Gradtwin., Chennai., INDIA.
+  logo: dataScience2.jpeg
   keywords: ["Python", "Data Science", "Machine Learning", "Deep Learning"]
   authors: ['Rajesh Karra']
   github: https://github.com/rajeshkumarkarra/internship_Data-Science
-  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+
 toc: 
   - file: README.md
+
 exports:
   - format: pdf
     template: lapreprint-typst
     articles: intro.md
-references:
-    guide: https://mystmd.org/guide
 
+references:
+  - guide: https://mystmd.org/guide
 
 site:
   template: book-theme
-  options:
-  #   favicon: favicon.ico
-  logo: dataScience.png
+  #options:
+    # favicon: favicon.ico
+  logo: 'dataScience2.jpeg'
