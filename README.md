@@ -5,6 +5,6 @@ exports:
   #- format: docx
   - format: pdf
     template: volcanica
-    output: ./offerLetter.pdf
+    output: exports/offerLetter.pdf
 ---
 # About the Author

@@ -10,6 +10,7 @@ project:
   github: https://github.com/rajeshkumarkarra/internship_Data-Science
 
 toc: 
+  - file: offerLetter.pdf
   - file: README.md
   - file: intro.md
 
