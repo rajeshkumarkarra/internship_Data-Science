@@ -107,6 +107,16 @@ def query_gemini(prompt):
 iface = gr.Interface(fn=query_gemini, inputs="text", outputs="text")
 iface.launch()
 ```
+---
+<iframe
+	src="https://rajeshkarra-geminiapi.hf.space"
+	frameborder="0"
+	width="850"
+	height="450"
+></iframe>
+
+
+---
 
 ---
 
