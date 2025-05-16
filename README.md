@@ -247,5 +247,15 @@ plt.show()
 - [CS229 Stanford Cheatsheet](https://cs229.stanford.edu/)
 - [NumPy, Pandas, SciPy, Sklearn cheatsheets (DataCamp)](https://www.datacamp.com/cheat-sheets)
 
+---
+### Connect with Me
 
+- 🐦 [Website](https://rajeshkumarkarra.github.io/)
+- 💼 [GitHub](https://github.com/rajeshkumarkarra)
+- 🧠 [Hugging Face](https://huggingface.co/RajeshKarra)
+- 📸 [ORCiD](https://orcid.org/0000-0003-4099-7143)
+- 💬 [Kaggle](https://www.kaggle.com/rajeshkumarkarra)
+
+
+---
 
