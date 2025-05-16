@@ -33,7 +33,18 @@ Generative AI models learn the underlying structure of data to generate new inst
 ## 2. Technology Stack Behind Generative AI
 
 ### 2.1 Transformer Architecture
-- Introduced in Vaswani et al., 2017 ("Attention is All You Need")
+- The Transformer architecture is a deep learning model originally designed for natural language processing (NLP)
+- Imagine you're trying to read a story or solve a math problem — sometimes you need to look at the entire sentence or equation, not just the words one-by-one. That’s what Transformers do!
+
+	They can:
+
+	Look at all parts of a sentence at once 🔍
+
+	Figure out which words or tokens are most important ⚡
+
+	Use attention to focus on important parts (just like you when solving a physics equation)
+
+
 - Key components: Self-attention, positional encoding, layer normalization
 
 ### 2.2 Training Paradigms
