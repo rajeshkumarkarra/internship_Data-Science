@@ -76,6 +76,9 @@ text_gen = pipeline("text-generation", model="gpt2")
 print(text_gen("Theoretical Physics is", max_length=50))
 
 ```
+```python
+[{'generated_text': 'Theoretical Physics is one of the most fascinating areas of science. It explores the fundamental forces, particles, and the very fabric of space and time. Scientists in this field study quantum mechanics, general relativity, and string theory to understand how the universe works at its deepest level.'}]
+```
 
 ### 3.2 Image Generation (Diffusion)
 ```python
