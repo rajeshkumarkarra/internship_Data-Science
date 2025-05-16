@@ -178,7 +178,7 @@ iface.launch()
 	src="https://rajeshkarra-geminiapi.hf.space"
 	frameborder="0"
 	width="850"
-	height="1250"
+	height="1650"
 ></iframe>
 
 
