@@ -50,29 +50,70 @@ Generative AI models learn the underlying structure of data to generate new inst
 
 ### 3.1 Text Generation
 ```python
+# We are importing something called 'pipeline' from a library named 'transformers'
+# This pipeline is like a machine that helps us run smart AI models easily
 from transformers import pipeline
+
+# We are telling the pipeline to do "text-generation"
+# That means it will try to continue a sentence we give it
+# We are using a model called "gpt2", which is a smart AI that knows a lot about language
 text_gen = pipeline("text-generation", model="gpt2")
+
+# Now we give it the start of a sentence: "Theoretical Physics is"
+# And we tell it to keep going until the total sentence is 50 words long
+# Then we print out the result (what the AI writes)
 print(text_gen("Theoretical Physics is", max_length=50))
+
 ```
 
 ### 3.2 Image Generation (Diffusion)
 ```python
+# We are importing a special art-making tool called "StableDiffusionPipeline" from the diffusers library.
+# This tool can turn words into pictures, like magic!
 from diffusers import StableDiffusionPipeline
+
+# Now we are choosing a smart artist model called "stable-diffusion-v1-5" to use.
+# It's like hiring a robot artist that knows how to paint based on your words.
 pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
+
+# We tell the robot artist what we want: "A quantum computer in a futuristic lab"
+# The robot thinks for a moment and draws a picture based on that idea.
 image = pipe("A quantum computer in a futuristic lab").images[0]
+
+# Finally, we show the image it created on the screen!
 image.show()
 ```
 
 ### 3.3 Code Generation
 ```python
+# We import special tools from Hugging Face to work with AI models.
+# "transformers" helps us load smart models that understand and generate code or text.
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# "torch" is a toolbox that helps AI models think using numbers (called tensors).
 import torch
 
+# We download a "tokenizer" that breaks down words or code into tiny pieces (tokens),
+# and later helps put them back together. This tokenizer is trained to understand code!
 tokenizer = AutoTokenizer.from_pretrained("Salesforce/codegen-350M-mono")
+
+# We load a small but smart code-writing AI model.
+# This model has learned how to complete or write Python code by studying many examples.
 model = AutoModelForCausalLM.from_pretrained("Salesforce/codegen-350M-mono")
+
+# Now we give the model the start of a Python function:
+# "def quantum_fourier_transform(n):"
+# The tokenizer turns this text into numbers the AI can understand.
 inputs = tokenizer("def quantum_fourier_transform(n):", return_tensors="pt")
+
+# The model thinks for a bit and tries to complete the code.
+# max_length=100 means it will stop after writing 100 tokens (words/pieces).
 outputs = model.generate(**inputs, max_length=100)
+
+# Finally, we take the numbers the model gave us and turn them back into readable text.
+# This will print the completed Python code!
 print(tokenizer.decode(outputs[0]))
+
 ```
 
 ---
@@ -94,18 +135,43 @@ print(tokenizer.decode(outputs[0]))
 
 ### 5.2 Sample Space (Gradio + Gemini)
 ```python
+# We are using two tools:
+# gradio → makes a website where we can ask questions
+# requests → helps us talk to the Gemini robot on the internet
 import gradio as gr
 import requests
 
+# This function sends your question (prompt) to the Gemini AI
 def query_gemini(prompt):
+    # This is the pretend URL for Gemini's brain (not real in this example)
     url = "https://api.gemini.flash/v2/query"
-    headers = {"Authorization": "Bearer <YOUR_GEMINI_API_KEY>"}
+    
+    # This is how we prove we have permission to talk to Gemini
+    headers = {
+        "Authorization": "Bearer <YOUR_GEMINI_API_KEY>"  # Replace this with your real API key!
+    }
+
+    # We put your question into a package to send to Gemini
     data = {"input": prompt}
+
+    # We send the package to Gemini using a POST request
     response = requests.post(url, json=data, headers=headers)
+
+    # Gemini sends back an answer — we open the package and get the answer
     return response.json()["output"]
 
-iface = gr.Interface(fn=query_gemini, inputs="text", outputs="text")
+# Now we build the little website box:
+# - You type a question (input)
+# - Gemini gives an answer (output)
+iface = gr.Interface(
+    fn=query_gemini,    # When you hit enter, it calls this function
+    inputs="text",      # The input is a text box
+    outputs="text"      # The output is shown as plain text
+)
+
+# This starts the little website so you can use it
 iface.launch()
+
 ```
 ---
 <iframe
