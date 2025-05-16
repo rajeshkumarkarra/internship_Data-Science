@@ -184,6 +184,16 @@ iface.launch()
 
 ---
 
+---
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.29.1/gradio.js"
+></script>
+
+<gradio-app src="https://rajeshkarra-geminiapi.hf.space"></gradio-app>
+
+---
+
 
 
 ## 6. API References
