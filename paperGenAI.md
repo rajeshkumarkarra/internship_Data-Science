@@ -133,12 +133,3 @@ Generative AI is transforming the way humans create and interact with content. B
 
 ---
 
-## 8. Acknowledgments
-We acknowledge the contributions of the open-source community and researchers behind foundational models and libraries that make GenAI accessible.
-
----
-
-## 9. Future Work
-- Integration with quantum computing pipelines
-- Real-time GenAI on edge devices
-- Improved evaluation metrics for generated content
