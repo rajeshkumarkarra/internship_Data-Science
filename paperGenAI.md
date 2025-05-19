@@ -98,7 +98,7 @@ image = pipe("A quantum computer in a futuristic lab").images[0]
 image.show()
 ```
 ```python
-[A quantum computer in a futuristic lab](https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-4fb8-61f7-8a2e-7f778a750670/raw?se=2025-05-19T07%3A40%3A16Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=ec8eb293-a61a-47e0-abd0-6051cc94b050&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-19T05%3A59%3A52Z&ske=2025-05-20T05%3A59%3A52Z&sks=b&skv=2024-08-04&sig=WjH9qqQ6VOMVOfD19EsEDfu9MLl/zzxgurKM6ReO8R4%3D)
+[A quantum computer in a futuristic lab](quantumComputer.png)
 ```
 
 ### 3.3 Code Generation
