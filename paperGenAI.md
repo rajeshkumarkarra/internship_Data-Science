@@ -76,6 +76,7 @@ text_gen = pipeline("text-generation", model="gpt2")
 print(text_gen("Theoretical Physics is", max_length=50))
 
 ```
+'''
 ```python
 [{'generated_text': 'Theoretical Physics is one of the most fascinating areas of science. It explores the fundamental forces, particles, and the very fabric of space and time. Scientists in this field study quantum mechanics, general relativity, and string theory to understand how the universe works at its deepest level.'}]
 ```
@@ -97,9 +98,9 @@ image = pipe("A quantum computer in a futuristic lab").images[0]
 # Finally, we show the image it created on the screen!
 image.show()
 ```
-```python
+'''
 [A quantum computer in a futuristic lab](quantumComputer.png)
-```
+'''
 
 ### 3.3 Code Generation
 ```python
@@ -130,7 +131,7 @@ outputs = model.generate(**inputs, max_length=100)
 # Finally, we take the numbers the model gave us and turn them back into readable text.
 # This will print the completed Python code!
 print(tokenizer.decode(outputs[0]))
-
+'''
 ```python
 pip install transformers torch
 #### Expected Output:
@@ -145,7 +146,7 @@ def quantum_fourier_transform(n):
             qc.cu1(np.pi/float(2**(k-j)), k, j)
     return qc
 
-
+```
 ---
 
 ## 4. Use Cases
