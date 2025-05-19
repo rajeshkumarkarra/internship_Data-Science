@@ -42,7 +42,7 @@ Generative AI models learn the underlying structure of data to generate new inst
 
 	Figure out which words or tokens are most important ⚡
 
-	Use attention to focus on important parts (just like you when solving a physics equation)
+	Use attention to focus on important parts (just like you when solving a physics equation).
 
 
 - Key components: Self-attention, positional encoding, layer normalization
