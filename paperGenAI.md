@@ -131,11 +131,12 @@ outputs = model.generate(**inputs, max_length=100)
 # Finally, we take the numbers the model gave us and turn them back into readable text.
 # This will print the completed Python code!
 print(tokenizer.decode(outputs[0]))
+```
 '''
 ```python
 pip install transformers torch
-#### Expected Output:
-#### The model will generate a Python function like:
+Expected Output:
+The model will generate a Python function like:
 def quantum_fourier_transform(n):
     import numpy as np
     from qiskit import QuantumCircuit
