@@ -160,6 +160,19 @@ def quantum_fourier_transform(n):
     return qc
 
 ```
+🧬 The Gen AI Method Behind It
+🔄 Causal Language Modeling
+The model is trained to predict the next token, like completing a sentence.
+
+This is like how physics-informed models predict the next physical state.
+
+🧱 Transformer Architecture
+The model uses a Transformer decoder to understand context and generate coherent code.
+
+📦 Model: Salesforce/codegen-350M-mono
+Fine-tuned on Python and code-related tasks.
+
+Ideal for writing code from docstrings, function headers, or algorithm names.
 ---
 
 ## 4. Use Cases
