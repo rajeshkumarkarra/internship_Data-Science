@@ -170,8 +170,7 @@ def quantum_fourier_transform(n):
 
 📦 Model: Salesforce/codegen-350M-mono
 - Fine-tuned on Python and code-related tasks.
-
-Ideal for writing code from docstrings, function headers, or algorithm names.
+- Ideal for writing code from docstrings, function headers, or algorithm names.
 ---
 
 ## 4. Use Cases
