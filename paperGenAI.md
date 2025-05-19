@@ -97,6 +97,9 @@ image = pipe("A quantum computer in a futuristic lab").images[0]
 # Finally, we show the image it created on the screen!
 image.show()
 ```
+```
+[A quantum computer in a futuristic lab](https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-4fb8-61f7-8a2e-7f778a750670/raw?se=2025-05-19T07%3A40%3A16Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=ec8eb293-a61a-47e0-abd0-6051cc94b050&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-19T05%3A59%3A52Z&ske=2025-05-20T05%3A59%3A52Z&sks=b&skv=2024-08-04&sig=WjH9qqQ6VOMVOfD19EsEDfu9MLl/zzxgurKM6ReO8R4%3D)
+```
 
 ### 3.3 Code Generation
 ```python
@@ -129,6 +132,19 @@ outputs = model.generate(**inputs, max_length=100)
 print(tokenizer.decode(outputs[0]))
 
 ```
+pip install transformers torch
+Expected Output:
+The model will generate a Python function like:
+def quantum_fourier_transform(n):
+    import numpy as np
+    from qiskit import QuantumCircuit
+    qc = QuantumCircuit(n)
+    for j in range(n):
+        qc.h(j)
+        for k in range(j+1, n):
+            qc.cu1(np.pi/float(2**(k-j)), k, j)
+    return qc
+
 
 ---
 
